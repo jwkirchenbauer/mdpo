@@ -25,7 +25,7 @@ import transformers
 from datasets import load_dataset
 from transformers import set_seed
 from transformers.trainer_utils import get_last_checkpoint
-from open_r1.configs import DLPOConfig
+from open_r1.configs import MDPOConfig
 from open_r1.mdpo.mdpo_trainer import MDPOTrainer
 from open_r1.rewards import (
     accuracy_reward,
@@ -358,7 +358,7 @@ def main(script_args, training_args, model_args):
     # model_config.n_layers = 4
     # model = LLaDAModelLM(model_config)
     #############################
-    # Initialize the DLPO trainer
+    # Initialize the MDPO trainer
     #############################
     trainer = MDPOTrainer(
         model=model,
@@ -426,6 +426,6 @@ def main(script_args, training_args, model_args):
 
 
 if __name__ == "__main__":
-    parser = TrlParser((GRPOScriptArguments, DLPOConfig, ModelConfig))
+    parser = TrlParser((GRPOScriptArguments, MDPOConfig, ModelConfig))
     script_args, training_args, model_args = parser.parse_args_and_config()
     main(script_args, training_args, model_args)

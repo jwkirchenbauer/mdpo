@@ -280,7 +280,7 @@ def main(script_args, training_args, model_args):
     # model_config.n_layers = 4
     # model = LLaDAModelLM(model_config)
     #############################
-    # Initialize the DLPO trainer
+    # Initialize the DiffGRPO trainer
     #############################
     trainer = DiffuGRPOTrainer(
         model=model,

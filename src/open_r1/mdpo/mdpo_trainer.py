@@ -450,7 +450,7 @@ class RepeatRandomSampler(Sampler):
 
 class MDPOTrainer(Trainer):
     """
-    Trainer for the Denoising Language Policy Optimization (DLPO) method. This algorithm was initially proposed in the
+    Trainer for the Masked Diffusion Policy Optimization (MDPO) method. This algorithm was initially proposed in the
     paper [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](https://huggingface.co/papers/2402.03300).
 
     Example:
@@ -465,7 +465,7 @@ class MDPOTrainer(Trainer):
         # Dummy reward function that rewards completions with more unique letters.
         return [float(len(set(completion))) for completion in completions]
 
-    trainer = DLPOTrainer(
+    trainer = MDPOTrainer(
         model="Qwen/Qwen2-0.5B-Instruct",
         reward_funcs=reward_func,
         train_dataset=dataset,
@@ -558,7 +558,7 @@ class MDPOTrainer(Trainer):
         if args is None:
             model_name = model if isinstance(model, str) else model.config._name_or_path
             model_name = model_name.split("/")[-1]
-            args = MDPOConfig(f"{model_name}-DLPO")
+            args = MDPOConfig(f"{model_name}-MDPO")
 
         # Models
         # Trained model

@@ -1,2 +1,2 @@
-from open_r1.dlpo.dlpo_config import DLPOConfig
-from open_r1.dlpo.dlpo_trainer import DLPOTrainer
+from open_r1.mdpo.mdpo_config import MDPOConfig
+from open_r1.mdpo.mdpo_trainer import MDPOTrainer

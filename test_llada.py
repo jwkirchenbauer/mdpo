@@ -18,7 +18,6 @@ from latex2sympy2_extended import NormalizationConfig
 from tqdm import tqdm
 from visualize_diffusion import DiffusionModelVisualizer
 from torch.utils.data import DataLoader
-from accelerate.utils import broadcast_object_list, gather, gather_object, is_peft_model, set_seed, broadcast
 
 def setup_ddp():
     dist.init_process_group("nccl")

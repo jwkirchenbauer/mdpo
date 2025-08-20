@@ -35,7 +35,7 @@ gradient_accumulation_steps: 32
 gradient_checkpointing: false
 gradient_checkpointing_kwargs:
   use_reentrant: false
-hub_model_id: LLaDA-8B-Instruct-DLPO-v3
+hub_model_id: LLaDA-8B-Instruct-MDPO-v3
 hub_strategy: every_save
 learning_rate: 1.0e-05
 log_completions: true
@@ -47,7 +47,7 @@ lr_scheduler_type: constant #cosine
 max_steps: -1
 num_generations: 4
 num_train_epochs: 1
-output_dir: data/LLaDA-8B-Instruct-DLPO-v3
+output_dir: data/LLaDA-8B-Instruct-MDPO-v3
 overwrite_output_dir: true
 per_device_eval_batch_size: 1
 per_device_train_batch_size: 1

@@ -67,7 +67,7 @@ gradient_checkpointing: false
 gradient_checkpointing_kwargs:
   use_reentrant: false
 resume_from_checkpoint: false
-hub_model_id: LLaDA-8B-Instruct-DLPO-v3
+hub_model_id: LLaDA-8B-Instruct-MDPO-v3
 hub_strategy: every_save
 log_completions: true
 log_level: info

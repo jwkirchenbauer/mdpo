@@ -15,7 +15,7 @@
 
 from dataclasses import dataclass, field
 from typing import Optional
-from open_r1.dlpo import DLPOConfig as BasedDLPOConfig
+from open_r1.mdpo import MDPOConfig as BasedMDPOConfig
 from open_r1.diff_grpo.config import DiffuGRPOConfig as BaseDiffuGRPOConfig
 import trl
 
@@ -86,7 +86,7 @@ class SFTConfig(trl.SFTConfig):
     )
 
 @dataclass
-class DLPOConfig(BasedDLPOConfig):
+class MDPOConfig(BasedMDPOConfig):
     """
     args for callbacks, benchmarks etc
     """
