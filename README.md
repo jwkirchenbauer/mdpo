@@ -57,7 +57,7 @@ Note that when you turn on "incremental_training", it will start with inference 
 ## 📚Citation
 If you find this work useful, please consider citing our paper. 🥰
 ```
-@misc{he2025mdpoovercomingtraininginferencedivide,
+@misc{he2025MDPO,
       title={MDPO: Overcoming the Training-Inference Divide of Masked Diffusion Language Models}, 
       author={Haoyu He and Katrin Renz and Yong Cao and Andreas Geiger},
       year={2025},
