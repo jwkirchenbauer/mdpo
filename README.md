@@ -28,7 +28,7 @@ To run training with the same setting as we describe in the paper
 
 ```shell
 CC=${gcc path} CUDA_HOME=${CUDA_HOME} CXX=${g++ path} accelerate launch --config_file recipes/accelerate_configs/zero2.yaml \
---num_processes 8 src/open_r1/mdpo.py 
+--num_processes N src/open_r1/mdpo.py 
 --config recipes/LLaDA-Instruct/mdpo/config_demo.yaml 
 --dataset_train_split train 
 --num_train_epochs 1 
