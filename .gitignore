@@ -178,3 +178,8 @@ eval_results/
 results/
 *.csv
 .vscode/
+
+# jwk additional
+outputs/
+cache/
+bitsandbytes/
