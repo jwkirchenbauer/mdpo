@@ -17,15 +17,15 @@ RCCL_INSTALL_DIR = (
 ROCM_VERSION = "6.3.0"
 RCCL_CFG = "rdzv-lbann"
 
-QOS = "pdebug"
-# QOS = "pbatch"
+# QOS = "pdebug"
+QOS = "pbatch"
 
-BANK = "guests"
-# BANK = "effml"
+# BANK = "guests"
+BANK = "effml"
 
 # TIME_LIMIT = 29
-TIME_LIMIT = 59
-# TIME_LIMIT = 360
+# TIME_LIMIT = 59
+TIME_LIMIT = 360
 
 BASE_OUT_DIR = f"/p/vast1/kirchenb/diffusion-root/mdpo/outputs"
 

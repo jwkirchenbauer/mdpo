@@ -67,6 +67,7 @@ cmake -DCOMPUTE_BACKEND=hip -DBNB_ROCM_ARCH="gfx942" -S .  # Use -DBNB_ROCM_ARCH
 make
 pip install --no-deps -e .   # `-e` for "editable" install, when developing BNB (otherwise leave that out)
 
+cd ${INSTALLDIR}
 
 # amdsmi
 cp -R /opt/rocm-${rocm_version}/share/amd_smi/ $WRKSPC/amd_smi_${rocm_version}
